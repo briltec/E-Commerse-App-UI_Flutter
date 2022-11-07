@@ -39,10 +39,13 @@ class AddToCart extends StatelessWidget {
           Expanded(
             child: SizedBox(
               height: 50,
-              child: FlatButton(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18)),
-                color: product.color,
+              child: TextButton(
+                // shape: RoundedRectangleBorder(
+                //     borderRadius: BorderRadius.circular(18)),
+                // color: product.color,
+                style: TextButton.styleFrom(
+                  textStyle: const TextStyle(fontSize: 20),
+                ),
                 onPressed: () {},
                 child: Text(
                   "Buy  Now".toUpperCase(),
